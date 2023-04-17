@@ -40,7 +40,7 @@ struct DrawingView: View {
                     .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged({ line in
                         let newPoint = line.location
                         if line.translation.width + line.translation.height == 0 {
-                            value.append(Line(points: [newPoint], color: penColor, lineWidth: 8))
+                            value.append(Line(points: [newPoint], color: penColor, lineWidth: 5))
                         } else {
                             let index = value.count - 1
                             value[index].points.append(newPoint)

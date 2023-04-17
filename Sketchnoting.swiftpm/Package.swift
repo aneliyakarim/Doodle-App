@@ -16,6 +16,7 @@ let package = Package(
         .iOSApplication(
             name: "Doodle ✏️",
             targets: ["AppModule"],
+            bundleIdentifier: "com.doodle.app",
             teamIdentifier: "LK2F3JC747",
             displayVersion: "1.0",
             bundleVersion: "1",
