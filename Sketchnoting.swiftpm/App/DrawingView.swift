@@ -2,8 +2,9 @@ import SwiftUI
 
 struct DrawingView: View {
     var image: Image
-    @State var value: [Line] = [Line(points: [CGPoint(), CGPoint()], color: Color.black, lineWidth: 5)]
+    @State var value: [Line] = []
     @State private var penColor = Color.black
+    @State private var showingAlert = false
     private var penColors: [Color] {
         return [.pink,
                 .red,
@@ -39,18 +40,16 @@ struct DrawingView: View {
                     .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged({ line in
                         let newPoint = line.location
                         if line.translation.width + line.translation.height == 0 {
-                            value.append(Line(points: [newPoint], color: penColor, lineWidth: 5))
+                            value.append(Line(points: [newPoint], color: penColor, lineWidth: 8))
                         } else {
                             let index = value.count - 1
                             value[index].points.append(newPoint)
                         }
                     }))
                 
-                
                 canvas
-
+                
                 VStack(alignment: .trailing) {
-                    
                     Spacer()
                     HStack {
                         Button {
@@ -59,8 +58,8 @@ struct DrawingView: View {
                             guard let image = renderer.uiImage else {
                                 return
                             }
-                            
                             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                            showingAlert = true
                         }
                     label: {
                         Image(systemName: "square.and.arrow.up")
@@ -68,6 +67,9 @@ struct DrawingView: View {
                     .foregroundColor(.black)
                     .font(.system(size: 20, weight: .bold))
                     .opacity(value.isEmpty ? 0.3 : 1)
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Doodle ✏️"), message: Text("Your Doodle is saved in Photos."), dismissButton: .default(Text("Got it!")))
+                    }
                         Spacer()
                         ForEach(penColors, id:\.self) { color in
                             Button {

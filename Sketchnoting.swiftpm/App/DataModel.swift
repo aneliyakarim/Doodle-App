@@ -1,7 +1,3 @@
-/*
-See the License.txt file for this sample’s licensing information.
-*/
-
 import Foundation
 
 class DataModel: ObservableObject {

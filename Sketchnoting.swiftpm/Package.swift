@@ -34,7 +34,7 @@ let package = Package(
             capabilities: [
                 .fileAccess(.pictureFolder, mode: .readWrite),
                 .photoLibrary(purposeString: "To use images from Photos and save your drawings in Recents album."),
-                .photoLibraryAdd(purposeString: "To add pictues in the app.To use images from Photos and save your drawings in Recents album.")
+                .photoLibraryAdd(purposeString: "To use images from Photos and save your drawings in Recents album.")
             ]
         )
     ],

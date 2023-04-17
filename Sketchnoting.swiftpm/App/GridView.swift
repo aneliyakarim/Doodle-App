@@ -5,6 +5,7 @@ struct GridView: View {
     
     private static let columns = 3
     @State private var isAddingPhoto = false
+    @State private var isEditing = false
     
     @State private var gridColumns = Array(repeating: GridItem(.flexible()), count: columns)
     
@@ -22,6 +23,21 @@ struct GridView: View {
                         .aspectRatio(1, contentMode: .fit)
                         .shadow(color: Color(red: 0.8, green: 0.8, blue: 0.8, opacity: 0.5), radius: 8)
                         .padding()
+                        .overlay(alignment: .topTrailing) {
+                            if isEditing {
+                                Button {
+                                    withAnimation {
+                                        dataModel.removeItem(item)
+                                    }
+                                } label: {
+                                    Image(systemName: "xmark.square.fill")
+                                        .font(Font.title)
+                                        .symbolRenderingMode(.palette)
+                                        .foregroundStyle(.white, .red)
+                                }
+                                .offset(x: 2, y: 0)
+                            }
+                        }
                     }
                 }
                 .padding()
@@ -33,6 +49,11 @@ struct GridView: View {
             PhotoPicker()
         }
         .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(isEditing ? "Done" : "Edit") {
+                    withAnimation { isEditing.toggle() }
+                }
+            }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     isAddingPhoto = true
@@ -45,7 +66,7 @@ struct GridView: View {
 }
 
 struct GridView_Previews: PreviewProvider {   static var previews: some View {
-        GridView().environmentObject(DataModel())
-            .previewDevice("iPad (8th generation)")
-    }
+    GridView().environmentObject(DataModel())
+        .previewDevice("iPad (8th generation)")
+}
 }
