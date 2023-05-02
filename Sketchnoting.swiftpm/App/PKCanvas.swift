@@ -14,6 +14,7 @@ struct PKCanvas: UIViewRepresentable {
     
     func makeUIView(context: Context) -> PKCanvasView {
         canvasView.drawingPolicy = .anyInput
+        canvasView.isOpaque = false
         showToolPicker()
         return canvasView
     }
