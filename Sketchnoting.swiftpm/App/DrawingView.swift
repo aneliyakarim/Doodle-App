@@ -1,20 +1,10 @@
 import SwiftUI
+import PencilKit
 
 struct DrawingView: View {
     var image: Image
-    @State var value: [Line] = []
-    @State private var penColor = Color.black
     @State private var showingAlert = false
-    private var penColors: [Color] {
-        return [.pink,
-                .red,
-                .orange,
-                .green,
-                .blue,
-                .teal,
-                .brown,
-                .black]
-    }
+    @State private var pkCanvasView = PKCanvasView()
     
     var body: some View {
         
@@ -28,36 +18,15 @@ struct DrawingView: View {
                 .opacity(0.3)
             
             GeometryReader { geo in
-                let canvas = Canvas { context, size in
-                    for line in value {
-                        var path = Path()
-                        path.addLines(line.points)
-                        context.stroke(path, with: .color(line.color), lineWidth: line.lineWidth)
-                    }
-                }
+                PKCanvas(canvasView: $pkCanvasView)
                     .frame(width: geo.size.width, height: geo.size.height)
                     .cornerRadius(20)
-                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged({ line in
-                        let newPoint = line.location
-                        if line.translation.width + line.translation.height == 0 {
-                            value.append(Line(points: [newPoint], color: penColor, lineWidth: 5))
-                        } else {
-                            let index = value.count - 1
-                            value[index].points.append(newPoint)
-                        }
-                    }))
-                
-                canvas
                 
                 VStack(alignment: .trailing) {
                     Spacer()
                     HStack {
                         Button {
-                            let renderer = ImageRenderer(content: canvas)
-                            
-                            guard let image = renderer.uiImage else {
-                                return
-                            }
+                            let image = pkCanvasView.drawing.image(from: pkCanvasView.bounds, scale: UIScreen.main.scale)
                             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
                             showingAlert = true
                         }
@@ -66,36 +35,12 @@ struct DrawingView: View {
                     }
                     .foregroundColor(.black)
                     .font(.system(size: 20, weight: .bold))
-                    .opacity(value.isEmpty ? 0.3 : 1)
+                    .opacity(1)
                     .alert(isPresented: $showingAlert) {
                         Alert(title: Text("Doodle ✏️"), message: Text("Your Doodle is saved in Photos."), dismissButton: .default(Text("Got it!")))
                     }
                         Spacer()
-                        ForEach(penColors, id:\.self) { color in
-                            Button {
-                                penColor = color
-                            } label: {
-                                Image(systemName: penColor == color ? "circle.fill" : "circle")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(color)
-                            }
-                        }
-                        Spacer()
-                        Button {
-                            value.removeLast()
-                            while let lastLine = value.last {
-                                if lastLine.points.count <= 1 {
-                                    value.removeLast()
-                                } else {
-                                    break
-                                }
-                            }
-                        } label: {
-                            Image(systemName: "arrow.uturn.backward")
-                                .foregroundColor(.black)
-                                .font(.system(size: 20, weight: .bold))
-                                .opacity(value.isEmpty ? 0.3 : 1)
-                        }
+                        
                     }
                     .padding(20)
                     .background(.white.opacity(0.5))
@@ -114,3 +59,5 @@ struct DrawingView_Previews: PreviewProvider {
         DrawingView(image: Image("frames"))
     }
 }
+
+
