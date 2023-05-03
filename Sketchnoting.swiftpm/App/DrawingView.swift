@@ -5,6 +5,7 @@ struct DrawingView: View {
     var image: Image
     @State private var showingAlert = false
     @State private var pkCanvasView = PKCanvasView()
+    @State private var isSharing = false
     
     var body: some View {
         
@@ -22,28 +23,20 @@ struct DrawingView: View {
                     .frame(width: geo.size.width, height: geo.size.height)
                     .cornerRadius(20)
                 
+            
                 VStack(alignment: .trailing) {
-                    Spacer()
                     HStack {
-                        Button {
+                        Button(action: shareDrawing) {
+                            Image(systemName: "square.and.arrow.up")
+                        }.sheet(isPresented: $isSharing) {
                             let image = pkCanvasView.drawing.image(from: pkCanvasView.bounds, scale: UIScreen.main.scale)
-                            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-                            showingAlert = true
+                            ShareSheet(
+                                activityItems: [image],
+                                excludedActivityTypes: [])
                         }
-                    label: {
-                        Image(systemName: "square.and.arrow.up")
-                    }
-                    .foregroundColor(.black)
-                    .font(.system(size: 20, weight: .bold))
-                    .opacity(1)
-                    .alert(isPresented: $showingAlert) {
-                        Alert(title: Text("Doodle ✏️"), message: Text("Your Doodle is saved in Photos."), dismissButton: .default(Text("Got it!")))
-                    }
-                        Spacer()
-                        
                     }
                     .padding(20)
-                    .background(.white.opacity(0.5))
+                    .background(.white)
                     .cornerRadius(20)
                     .padding(20)
                     
@@ -52,6 +45,10 @@ struct DrawingView: View {
         }
         .padding(50)
     }
+    
+    func shareDrawing() {
+        isSharing = true
+    }
 }
 
 struct DrawingView_Previews: PreviewProvider {
@@ -59,5 +56,4 @@ struct DrawingView_Previews: PreviewProvider {
         DrawingView(image: Image("frames"))
     }
 }
-
 
