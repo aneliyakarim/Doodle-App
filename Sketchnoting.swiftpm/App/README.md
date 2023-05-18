@@ -13,5 +13,6 @@ The Laying Out Views tutorial is available on (https://developer.apple.com/tutor
 
 ## Next steps
 To improve UX with 
-1) share sheet,
-2) PencilKit and specifically PKToolPicker.
+1) move "sharrow" to the left
+2) inactive "sharrow" state when there is no drawing
+3) add new templates
