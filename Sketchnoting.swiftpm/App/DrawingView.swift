@@ -6,6 +6,7 @@ struct DrawingView: View {
     @State private var showingAlert = false
     @State private var pkCanvasView = PKCanvasView()
     @State private var isSharing = false
+    @State private var isBackgroundHiding = false
     
     var body: some View {
         
@@ -13,19 +14,27 @@ struct DrawingView: View {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(.white)
                 .shadow(color: Color(red: 0.8, green: 0.8, blue: 0.8, opacity: 0.5), radius: 8)
+            
             image
                 .resizable()
                 .scaledToFit()
-                .opacity(0.3)
+                .opacity(isBackgroundHiding ? 0 : 0.3)
             
             GeometryReader { geo in
                 PKCanvas(canvasView: $pkCanvasView)
                     .frame(width: geo.size.width, height: geo.size.height)
                     .cornerRadius(20)
                 
-            
                 VStack(alignment: .trailing) {
                     HStack {
+                        Button {
+                            isBackgroundHiding.toggle()
+                        } label: {
+                            Image(systemName: isBackgroundHiding ? "eye" : "eye.slash")
+                        }
+                        
+                        Spacer()
+                        
                         Button(action: shareDrawing) {
                             Image(systemName: "square.and.arrow.up")
                         }.sheet(isPresented: $isSharing) {
@@ -39,7 +48,6 @@ struct DrawingView: View {
                     .background(.white)
                     .cornerRadius(20)
                     .padding(20)
-                    
                 }
             }
         }
