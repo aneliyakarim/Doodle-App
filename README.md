@@ -14,7 +14,6 @@ The Drawing with PencilKit: Getting Started (MasterThis app) is available on htt
 
 ## Next steps
 To improve UX with 
-1) move "sharrow" to the left
-2) inactive "sharrow" state when there is no drawing
-3) add new templates
-4) add a toggle to make the template invisible
+1) inactive "sharrow" state when there is no drawing
+2) add new templates
+3) publish to the App Store
