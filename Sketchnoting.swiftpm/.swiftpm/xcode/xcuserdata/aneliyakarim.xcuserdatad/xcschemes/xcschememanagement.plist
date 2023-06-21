@@ -24,15 +24,30 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>Doo Over.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Doo ✏️ .xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Doodl Over.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Doodle  ✏️ .xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
+		</dict>
+		<key>Doodle Over.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 		<key>Doodle ✏️ .xcscheme_^#shared#^_</key>
 		<dict>
@@ -42,7 +57,7 @@
 		<key>Doodle ✏️.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Doodle ✏️🤩.xcscheme_^#shared#^_</key>
 		<dict>
@@ -54,10 +69,40 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Doodle.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Doodli.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Doodling.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Do✏️ .xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>10</integer>
+		</dict>
+		<key>Dra.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Draw .xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Draw Ove.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Sketchnoting Practice.xcscheme_^#shared#^_</key>
 		<dict>
@@ -93,6 +138,11 @@
 			<true/>
 		</dict>
 		<key>Doodle ✏️🤩</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>Dra</key>
 		<dict>
 			<key>primary</key>
 			<true/>

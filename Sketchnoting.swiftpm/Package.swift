@@ -8,15 +8,15 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "Doodle ✏️",
+    name: "Doodle Over",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "Doodle ✏️",
+            name: "Doodle Over",
             targets: ["AppModule"],
-            bundleIdentifier: "com.doodle.app",
+            bundleIdentifier: "com.doodle.sketchnoting",
             teamIdentifier: "LK2F3JC747",
             displayVersion: "1.0",
             bundleVersion: "1",
@@ -36,7 +36,8 @@ let package = Package(
                 .fileAccess(.pictureFolder, mode: .readWrite),
                 .photoLibrary(purposeString: "To use images from Photos and save your drawings in Recents album."),
                 .photoLibraryAdd(purposeString: "To use images from Photos and save your drawings in Recents album.")
-            ]
+            ],
+            appCategory: .education
         )
     ],
     targets: [
