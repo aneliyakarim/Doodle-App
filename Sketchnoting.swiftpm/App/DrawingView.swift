@@ -32,6 +32,10 @@ struct DrawingView: View {
                         } label: {
                             Image(systemName: isBackgroundHiding ? "eye" : "eye.slash")
                         }
+                        .frame(width: 30, height: 30)
+                        .padding(10)
+                        .background(Color.white.opacity(0.7))
+                        .cornerRadius(20)
                         
                         Spacer()
                         
@@ -43,10 +47,11 @@ struct DrawingView: View {
                                 activityItems: [image],
                                 excludedActivityTypes: [])
                         }
+                        .frame(width: 30, height: 30)
+                        .padding(10)
+                        .background(.white)
+                        .cornerRadius(20)
                     }
-                    .padding(20)
-                    .background(.white)
-                    .cornerRadius(20)
                     .padding(20)
                 }
             }
