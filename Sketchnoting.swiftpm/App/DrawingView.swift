@@ -49,7 +49,7 @@ struct DrawingView: View {
                         }
                         .frame(width: 30, height: 30)
                         .padding(10)
-                        .background(.white)
+                        .background(Color.white.opacity(0.7))
                         .cornerRadius(20)
                     }
                     .padding(20)
