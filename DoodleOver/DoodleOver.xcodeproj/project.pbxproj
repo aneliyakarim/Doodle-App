@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01024F32A5B49630093200F /* rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024ED2A5B49630093200F /* rose.jpg */; };
+		D01024F42A5B49630093200F /* smiles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024EE2A5B49630093200F /* smiles.jpg */; };
+		D01024F52A5B49630093200F /* trees.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024EF2A5B49630093200F /* trees.jpg */; };
+		D01024F62A5B49630093200F /* den.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024F02A5B49630093200F /* den.jpg */; };
+		D01024F72A5B49630093200F /* business.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024F12A5B49630093200F /* business.jpg */; };
+		D01024F82A5B49630093200F /* fruits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024F22A5B49630093200F /* fruits.jpg */; };
+		D01024FF2A5D9E200093200F /* girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024F92A5D9E200093200F /* girl.jpg */; };
+		D01025002A5D9E200093200F /* vesuvius.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024FA2A5D9E200093200F /* vesuvius.jpg */; };
+		D01025012A5D9E200093200F /* tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024FB2A5D9E200093200F /* tea.jpg */; };
+		D01025022A5D9E200093200F /* bubbles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024FC2A5D9E200093200F /* bubbles.jpg */; };
+		D01025032A5D9E200093200F /* animals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024FD2A5D9E200093200F /* animals.jpg */; };
+		D01025042A5D9E200093200F /* frames.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D01024FE2A5D9E200093200F /* frames.jpg */; };
 		D03377CD2A475E8C00E22B1E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03377B72A475E8C00E22B1E /* DetailView.swift */; };
 		D03377CE2A475E8C00E22B1E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03377B82A475E8C00E22B1E /* DataModel.swift */; };
 		D03377CF2A475E8C00E22B1E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03377B92A475E8C00E22B1E /* Item.swift */; };
 		D03377D02A475E8C00E22B1E /* MySketchnotingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03377BA2A475E8C00E22B1E /* MySketchnotingApp.swift */; };
 		D03377D12A475E8C00E22B1E /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03377BB2A475E8C00E22B1E /* DrawingView.swift */; };
-		D03377D22A475E8C00E22B1E /* rose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377BD2A475E8C00E22B1E /* rose.jpg */; };
-		D03377D32A475E8C00E22B1E /* animals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377BE2A475E8C00E22B1E /* animals.jpg */; };
-		D03377D42A475E8C00E22B1E /* girl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377BF2A475E8C00E22B1E /* girl.jpg */; };
 		D03377D52A475E8C00E22B1E /* intro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377C02A475E8C00E22B1E /* intro.jpg */; };
-		D03377D62A475E8C00E22B1E /* den.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377C12A475E8C00E22B1E /* den.jpg */; };
-		D03377D72A475E8C00E22B1E /* frames.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377C22A475E8C00E22B1E /* frames.jpg */; };
-		D03377D82A475E8C00E22B1E /* bubbles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377C32A475E8C00E22B1E /* bubbles.jpg */; };
-		D03377D92A475E8C00E22B1E /* tea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D03377C42A475E8C00E22B1E /* tea.jpg */; };
 		D03377DA2A475E8C00E22B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03377C52A475E8C00E22B1E /* Assets.xcassets */; };
 		D03377DB2A475E8C00E22B1E /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03377C62A475E8C00E22B1E /* FileManagerExtensions.swift */; };
 		D03377DC2A475E8C00E22B1E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D03377C72A475E8C00E22B1E /* README.md */; };
@@ -31,19 +36,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01024ED2A5B49630093200F /* rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rose.jpg; sourceTree = "<group>"; };
+		D01024EE2A5B49630093200F /* smiles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smiles.jpg; sourceTree = "<group>"; };
+		D01024EF2A5B49630093200F /* trees.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trees.jpg; sourceTree = "<group>"; };
+		D01024F02A5B49630093200F /* den.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = den.jpg; sourceTree = "<group>"; };
+		D01024F12A5B49630093200F /* business.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = business.jpg; sourceTree = "<group>"; };
+		D01024F22A5B49630093200F /* fruits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fruits.jpg; sourceTree = "<group>"; };
+		D01024F92A5D9E200093200F /* girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpg; sourceTree = "<group>"; };
+		D01024FA2A5D9E200093200F /* vesuvius.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vesuvius.jpg; sourceTree = "<group>"; };
+		D01024FB2A5D9E200093200F /* tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tea.jpg; sourceTree = "<group>"; };
+		D01024FC2A5D9E200093200F /* bubbles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bubbles.jpg; sourceTree = "<group>"; };
+		D01024FD2A5D9E200093200F /* animals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animals.jpg; sourceTree = "<group>"; };
+		D01024FE2A5D9E200093200F /* frames.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frames.jpg; sourceTree = "<group>"; };
 		D03377B72A475E8C00E22B1E /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D03377B82A475E8C00E22B1E /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D03377B92A475E8C00E22B1E /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D03377BA2A475E8C00E22B1E /* MySketchnotingApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySketchnotingApp.swift; sourceTree = "<group>"; };
 		D03377BB2A475E8C00E22B1E /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
-		D03377BD2A475E8C00E22B1E /* rose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rose.jpg; sourceTree = "<group>"; };
-		D03377BE2A475E8C00E22B1E /* animals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = animals.jpg; sourceTree = "<group>"; };
-		D03377BF2A475E8C00E22B1E /* girl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girl.jpg; sourceTree = "<group>"; };
 		D03377C02A475E8C00E22B1E /* intro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intro.jpg; sourceTree = "<group>"; };
-		D03377C12A475E8C00E22B1E /* den.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = den.jpg; sourceTree = "<group>"; };
-		D03377C22A475E8C00E22B1E /* frames.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frames.jpg; sourceTree = "<group>"; };
-		D03377C32A475E8C00E22B1E /* bubbles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bubbles.jpg; sourceTree = "<group>"; };
-		D03377C42A475E8C00E22B1E /* tea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tea.jpg; sourceTree = "<group>"; };
 		D03377C52A475E8C00E22B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03377C62A475E8C00E22B1E /* FileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		D03377C72A475E8C00E22B1E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -92,14 +102,19 @@
 		D03377BC2A475E8C00E22B1E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D03377BD2A475E8C00E22B1E /* rose.jpg */,
-				D03377BE2A475E8C00E22B1E /* animals.jpg */,
-				D03377BF2A475E8C00E22B1E /* girl.jpg */,
+				D01024FD2A5D9E200093200F /* animals.jpg */,
+				D01024FC2A5D9E200093200F /* bubbles.jpg */,
+				D01024FE2A5D9E200093200F /* frames.jpg */,
+				D01024F92A5D9E200093200F /* girl.jpg */,
+				D01024FB2A5D9E200093200F /* tea.jpg */,
+				D01024FA2A5D9E200093200F /* vesuvius.jpg */,
 				D03377C02A475E8C00E22B1E /* intro.jpg */,
-				D03377C12A475E8C00E22B1E /* den.jpg */,
-				D03377C22A475E8C00E22B1E /* frames.jpg */,
-				D03377C32A475E8C00E22B1E /* bubbles.jpg */,
-				D03377C42A475E8C00E22B1E /* tea.jpg */,
+				D01024F12A5B49630093200F /* business.jpg */,
+				D01024F02A5B49630093200F /* den.jpg */,
+				D01024F22A5B49630093200F /* fruits.jpg */,
+				D01024ED2A5B49630093200F /* rose.jpg */,
+				D01024EE2A5B49630093200F /* smiles.jpg */,
+				D01024EF2A5B49630093200F /* trees.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -179,16 +194,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03377D62A475E8C00E22B1E /* den.jpg in Resources */,
+				D01025012A5D9E200093200F /* tea.jpg in Resources */,
+				D01024F72A5B49630093200F /* business.jpg in Resources */,
+				D01025022A5D9E200093200F /* bubbles.jpg in Resources */,
+				D01024FF2A5D9E200093200F /* girl.jpg in Resources */,
 				D03377DA2A475E8C00E22B1E /* Assets.xcassets in Resources */,
-				D03377D42A475E8C00E22B1E /* girl.jpg in Resources */,
+				D01025042A5D9E200093200F /* frames.jpg in Resources */,
 				D03377D52A475E8C00E22B1E /* intro.jpg in Resources */,
-				D03377D22A475E8C00E22B1E /* rose.jpg in Resources */,
 				D03377DC2A475E8C00E22B1E /* README.md in Resources */,
-				D03377D32A475E8C00E22B1E /* animals.jpg in Resources */,
-				D03377D72A475E8C00E22B1E /* frames.jpg in Resources */,
-				D03377D92A475E8C00E22B1E /* tea.jpg in Resources */,
-				D03377D82A475E8C00E22B1E /* bubbles.jpg in Resources */,
+				D01025002A5D9E200093200F /* vesuvius.jpg in Resources */,
+				D01024F32A5B49630093200F /* rose.jpg in Resources */,
+				D01025032A5D9E200093200F /* animals.jpg in Resources */,
+				D01024F82A5B49630093200F /* fruits.jpg in Resources */,
+				D01024F52A5B49630093200F /* trees.jpg in Resources */,
+				D01024F62A5B49630093200F /* den.jpg in Resources */,
+				D01024F42A5B49630093200F /* smiles.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +361,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DoodleOver-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Doodle Over";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To use images from Photos and save your drawings in Recents album.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use images from Photos and save your drawings in Recents album.";
@@ -348,12 +369,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.doodleover.DoodleOver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doodling.DoodleOver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,6 +394,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DoodleOver-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Doodle Over";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To use images from Photos and save your drawings in Recents album.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To use images from Photos and save your drawings in Recents album.";
@@ -379,12 +402,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.doodleover.DoodleOver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.doodling.DoodleOver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
