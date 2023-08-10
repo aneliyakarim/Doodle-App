@@ -4,7 +4,7 @@ Draws doodles over an image and saves them in Photos. Download the app from the 
 
 ## Overview
 
-Welcome to the Doodle ✏️ app. This app combines practices from Image Gallery, Laying Out Views, and MasterThis tutorial apps.
+Welcome to the Doodle Over ✏️ app. This app combines practices from Image Gallery, Laying Out Views, and MasterThis tutorial apps.
 It also explores the ImageRenderer object that creates images from SwiftUI views. To make it work with Canvas, the GeometryReader was applied.
 
 ## Tutorials
