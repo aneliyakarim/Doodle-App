@@ -15,4 +15,4 @@ The Drawing with PencilKit: Getting Started (MasterThis app) is available at htt
 ## Next steps 
 1) inactive "sharrow" state when there is no drawing
 2) add new templates
-3) add Zoom feature
+3) add zoom in/out feature
